@@ -1,0 +1,258 @@
+﻿@model managedsql.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditLimit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditLimit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountOpenedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountOpenedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StandardDiscountPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StandardDiscountPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsStatementSent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsStatementSent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsOnCreditHold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsOnCreditHold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaxNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaxNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryRun)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryRun)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RunPosition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RunPosition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebsiteURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebsiteURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryAddressLine1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryAddressLine1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryAddressLine2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryAddressLine2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryPostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalAddressLine1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalAddressLine1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalAddressLine2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalAddressLine2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalPostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValidFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValidTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City1.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City1.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryMethod.DeliveryMethodName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryMethod.DeliveryMethodName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person1.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person1.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person2.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person2.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyingGroup.BuyingGroupName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyingGroup.BuyingGroupName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerCategory.CustomerCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerCategory.CustomerCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer1.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer1.CustomerName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
